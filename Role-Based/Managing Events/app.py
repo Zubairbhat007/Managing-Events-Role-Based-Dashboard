@@ -17,7 +17,7 @@ CORS(app, resources={r"/api/*": {"origins": "*"}})
 bcrypt = Bcrypt(app)
 jwt = JWTManager(app)
 
-DATABASE_CONNECTION_STRING = 'Driver={ODBC Driver 17 for SQL Server};Server=UBAID;Database=EventManagement;UID=sa;PWD=Ubaid@123;'
+DATABASE_CONNECTION_STRING = 'Driver={ODBC Driver 17 for SQL Server};Database= Event-Management;'
 
 def get_db_connection():
     return pyodbc.connect(DATABASE_CONNECTION_STRING)
